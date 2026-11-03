@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Blog</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Featured</h2>
+            <div id="featured-blogs"></div>
+        </section>
+
+        <section>
+            <h2>All Blogs</h2>
+            <div id="all-blogs"></div>
+        </section>
+
+        <section>
+            <h2>Write a Blog</h2>
+            <form id="blog-form">
+                <label>Author
+                    <select name="author" id="author-select" required></select>
+                </label>
+                <label>Title
+                    <input type="text" name="title" required>
+                </label>
+                <label>Article
+                    <textarea name="article" rows="6" required></textarea>
+                </label>
+                <label class="inline">
+                    <input type="checkbox" name="featured"> Featured
+                </label>
+                <button type="submit">Publish</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Authors</h2>
+            <ul id="users"></ul>
+
+            <h3>Add an Author</h3>
+            <form id="user-form">
+                <label>First name
+                    <input type="text" name="firstName" required>
+                </label>
+                <label>Last name
+                    <input type="text" name="lastName" required>
+                </label>
+                <label>Email
+                    <input type="email" name="email" required>
+                </label>
+                <button type="submit">Add Author</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

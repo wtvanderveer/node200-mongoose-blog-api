@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #fff;
+    color: #000;
+    font-family: Georgia, 'Times New Roman', serif;
+    line-height: 1.5;
+}
+
+header {
+    border-bottom: 2px solid #000;
+    padding: 16px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    border-bottom: 1px solid #000;
+    padding-bottom: 4px;
+}
+
+article {
+    border: 1px solid #000;
+    padding: 12px 16px;
+    margin-bottom: 16px;
+}
+
+article h3 {
+    margin: 0 0 4px;
+}
+
+.meta {
+    font-size: 0.85em;
+    margin-bottom: 8px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+label.inline {
+    flex-direction: row;
+    align-items: center;
+}
+
+input,
+textarea,
+select,
+button {
+    font: inherit;
+    color: #000;
+    background: #fff;
+    border: 1px solid #000;
+    padding: 6px 8px;
+}
+
+button {
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+button:hover {
+    background: #000;
+    color: #fff;
+}
+
+.delete {
+    font-size: 0.85em;
+    padding: 2px 8px;
+}
